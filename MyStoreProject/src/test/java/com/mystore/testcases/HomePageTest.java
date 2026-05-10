@@ -16,6 +16,8 @@ import com.mystore.pageobjects.IndexPage;
 import com.mystore.pageobjects.LoginPage;
 import com.mystore.utility.Log;
 
+import io.github.lambdatest.SmartUISnapshot;
+
 /**
  * @author Hitendra
  *
@@ -43,6 +45,7 @@ public class HomePageTest extends BaseClass {
 		loginPage=indexPage.clickOnSignIn();
 		homePage=loginPage.login(uname,pswd,homePage);
 		boolean result=homePage.validateMyWishList();
+		SmartUISnapshot.smartuiSnapshot(getDriver(), "HomePage - Wishlist Section");
 		Assert.assertTrue(result);
 		Log.endTestCase("wishListTest");
 	}
@@ -54,6 +57,7 @@ public class HomePageTest extends BaseClass {
 		loginPage=indexPage.clickOnSignIn();
 		homePage=loginPage.login(uname,pswd,homePage);
 		boolean result=homePage.validateOrderHistory();
+		SmartUISnapshot.smartuiSnapshot(getDriver(), "HomePage - Order History Section");
 		Assert.assertTrue(result);
 		Log.endTestCase("orderHistoryandDetailsTest");
 	}

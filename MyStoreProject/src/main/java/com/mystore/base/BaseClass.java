@@ -7,7 +7,6 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.xml.DOMConfigurator;
-import org.ietf.jgss.Oid;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,11 +14,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 
-import com.beust.jcommander.Parameter;
-import com.mystore.actiondriver.Action;
 import com.mystore.utility.ExtentManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -61,7 +56,7 @@ public class BaseClass {
 	public void launchApp(String browserName) {
 		// String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().clearDriverCache().setup();
 			// Set Browser to ThreadLocalMap
 			driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
@@ -82,7 +77,11 @@ public class BaseClass {
 		getDriver().manage().timeouts().pageLoadTimeout
 		(Integer.parseInt(prop.getProperty("pageLoadTimeOut")),TimeUnit.SECONDS);
 		//Launching the URL
-		getDriver().get(prop.getProperty("url"));
+		String appUrl = System.getProperty("appURL");
+		if (appUrl == null || appUrl.trim().isEmpty()) {
+			appUrl = prop.getProperty("url");
+		}
+		getDriver().get(appUrl);
 	}
 
 	@AfterSuite(groups = { "Smoke", "Regression","Sanity" })

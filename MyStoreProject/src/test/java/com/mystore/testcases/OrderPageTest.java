@@ -17,6 +17,8 @@ import com.mystore.pageobjects.OrderPage;
 import com.mystore.pageobjects.SearchResultPage;
 import com.mystore.utility.Log;
 
+import io.github.lambdatest.SmartUISnapshot;
+
 /**
  * @author Hitendra
  *
@@ -52,6 +54,7 @@ public class OrderPageTest extends BaseClass {
 		Double unitPrice=orderPage.getUnitPrice();
 		Double totalPrice=orderPage.getTotalPrice();
 		Double totalExpectedPrice=(unitPrice*(Double.parseDouble(qty)))+2;
+		SmartUISnapshot.smartuiSnapshot(getDriver(), "OrderPage - Total Price");
 		Assert.assertEquals(totalPrice, totalExpectedPrice);
 		Log.endTestCase("verifyTotalPrice");
 	}

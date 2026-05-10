@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="CrossBrowser" parallel="tests" thread-count="6">
+<suite name="ChromeOnly" parallel="false" thread-count="1">
 	<listeners>
 		<listener class-name="com.mystore.utility.ListenerClass"></listener>
 	</listeners>
@@ -8,20 +8,9 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
 			<class name="com.mystore.testcases.IndexPageTest" />
-		</classes>
-	</test>
-
-	<test name="FirefoxTest">
-		<parameter name="browser" value="Firefox"></parameter>
-		<classes>
-			<class name="com.mystore.testcases.IndexPageTest" />
-		</classes>
-	</test>
-
-	<test name="IETest">
-		<parameter name="browser" value="IE"></parameter>
-		<classes>
-			<class name="com.mystore.testcases.IndexPageTest" />
+			<class name="com.mystore.testcases.SearchResultPageTest" />
+			<class name="com.mystore.testcases.AddToCartPageTest" />
+			<class name="com.mystore.testcases.OrderPageTest" />
 		</classes>
 	</test>
 </suite> <!-- Suite -->

@@ -15,6 +15,8 @@ import com.mystore.pageobjects.IndexPage;
 import com.mystore.pageobjects.SearchResultPage;
 import com.mystore.utility.Log;
 
+import io.github.lambdatest.SmartUISnapshot;
+
 /**
  * @author Hitendra
  *
@@ -40,6 +42,7 @@ public class SearchResultPageTest extends BaseClass {
 		index= new IndexPage();
 		searchResultPage=index.searchProduct(productName);
 		boolean result=searchResultPage.isProductAvailable();
+		SmartUISnapshot.smartuiSnapshot(getDriver(), "SearchResult - Product Availability");
 		Assert.assertTrue(result);
 		Log.endTestCase("productAvailabilityTest");
 	}

@@ -1,0 +1,220 @@
+[:debug] http request: GET /packageinfo
+[:debug] http response: {"status":200,"headers":{"date":"Wed, 06 May 2026 16:43:54 GMT","content-type":"application/json","transfer-encoding":"chunked","connection":"keep-alive","server":"cloudflare","access-control-allow-methods":"GET, POST, PUT, OPTIONS,PATCH","access-control-allow-headers":"Pragma,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization,username,traceparent,tracestate","access-control-expose-headers":"Pragma,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range","cf-cache-status":"DYNAMIC","set-cookie":"__cf_bm=XZj2BFxBQF7C26hCnhXaVyOKxiqRsx5GCtTEf9okm8M-1778085833.7860248-1.0.1.1-j3QhEp44R08B_M6HqYJARJVDx5Me._VKKCvjqzmSyBBAl9yq.vFQ6R5m8wxkXx_THNwuzi22ZLSoQzwKMn1dRfq76BBeJyI8V69iRVaRN342QVdfy10aFgsYiIkIpjMo; HttpOnly; Secure; Path=/; Domain=lambdatest.com; Expires=Wed, 06 May 2026 17:13:54 GMT","cf-ray":"9f79724d2dca84ae-HKG"},"body":{"data":{"latestVersion":"4.1.67","deprecated":false,"additionalDescription":"If you face any problems executing tests, upgrade your node version to v20.3 or above","additionalDescriptionLatestVersion":"If you face any problems executing tests, upgrade your node version to v20.3 or above"}}}
+LambdaTest SmartUI CLI v4.1.67
+If you face any problems executing tests, upgrade your node version to v20.3 or above
+https://www.npmjs.com/package/@lambdatest/smartui-cli
+## No config file provided. Using default config.
+[startServer:debug] {"level":30,"time":1778085835544,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","msg":"Server listening at http://[::1]:49152"}
+[startServer:debug] {"level":30,"time":1778085835547,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","msg":"Server listening at http://127.0.0.1:49152"}
+[startServer:debug] Server started successfully on port 49152
+[exec:debug] {"level":30,"time":1778085862057,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-1","req":{"method":"GET","url":"/healthcheck","hostname":"localhost:49152","remoteAddress":"127.0.0.1","remotePort":50528},"msg":"incoming request"}
+[exec:debug] {"level":30,"time":1778085862064,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-1","res":{"statusCode":200},"responseTime":5.814899921417236,"msg":"request completed"}
+[exec:debug] {"level":30,"time":1778085862078,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-2","req":{"method":"GET","url":"/domserializer","hostname":"localhost:49152","remoteAddress":"127.0.0.1","remotePort":50528},"msg":"incoming request"}
+[exec:debug] {"level":30,"time":1778085862080,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-2","res":{"statusCode":200},"responseTime":1.8898999691009521,"msg":"request completed"}
+[exec:debug] {"level":30,"time":1778085862245,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-3","req":{"method":"POST","url":"/snapshot","hostname":"localhost:49152","remoteAddress":"127.0.0.1","remotePort":50528},"msg":"incoming request"}
+[exec:debug] http request: GET /sessions/capabilities
+[exec:debug] {"git":{"branch":"SmartUi_Test","commitId":"1698393","commitMessage":"updated log4j.xml","commitAuthor":"Reliable","githubURL":"","baselineBranch":""},"config":{"web":{"browsers":["chrome","firefox","safari","edge"],"viewports":[{"width":1920,"height":0},{"width":1366,"height":0},{"width":1028,"height":0}]},"mobile":{"devices":["iPhone 14","Galaxy S24"],"fullPage":true,"orientation":"portrait"},"waitForPageRender":0,"waitForTimeout":1000,"waitForDiscovery":30000,"enableJavaScript":false,"cliEnableJavaScript":true,"scrollTime":8,"allowedHostnames":[],"allowedAssets":[],"smartIgnore":false,"delayedUpload":false,"useGlobalCache":false,"ignoreHTTPSErrors":false,"skipBuildCreation":false,"dedicatedProxyURL":"","geolocation":"","userAgent":"","requestHeaders":{},"allowDuplicateSnapshotNames":false,"useLambdaInternal":false,"useRemoteDiscovery":false,"useExtendedViewport":false,"loadDomContent":false,"showRenderErrors":false},"isStartExec":false,"baselineBuild":"","packageVersion":"4.1.67"}
+[exec:debug] http response: {"status":500,"headers":{"date":"Wed, 06 May 2026 16:44:22 GMT","content-type":"text/plain; charset=utf-8","content-length":"43","connection":"keep-alive","server":"cloudflare","x-content-type-options":"nosniff","cf-cache-status":"DYNAMIC","set-cookie":"__cf_bm=NwbORaOI26fXjmlp5eV1kg783RWGsgbekWee2v1Jre4-1778085861.8036463-1.0.1.1-F9PqYiTnhO5MUiqZRHqtHD0G52ghb81Fu6P3SVu8gKJPqQonASXqj_kjlCS8ebRrujYeUxqrOz9Cchj30OaZEcnvDMrvErILUG9l0h5tqdpyJxmTaYR8GUGBusXmmxNa; HttpOnly; Secure; Path=/; Domain=lambdatest.com; Expires=Wed, 06 May 2026 17:14:22 GMT","cf-ray":"9f7972fc4abc8470-HKG"},"body":{"error":"Unable to get session details"}}
+[exec:debug] Failed to fetch capabilities for sessionId 5940aedf0e3305883ee57d262878dc40: [object Object]
+[exec:debug] Using local discovery
+[discovery:debug] Processing snapshot IndexPage - Verify Logo https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084
+[discovery:debug] {"level":30,"time":1778085862753,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-3","res":{"statusCode":200},"responseTime":507.36529994010925,"msg":"request completed"}
+[discovery:debug] Chromium launched with options {"headless":true,"args":["--disable-features=Translate,OptimizationGuideModelDownloading","--disable-background-networking","--disable-background-timer-throttling","--disable-renderer-backgrounding","--disable-backgrounding-occluded-windows","--disable-breakpad","--disable-client-side-phishing-detection","--disable-component-extensions-with-background-pages","--disable-default-apps","--disable-dev-shm-usage","--disable-extensions","--disable-hang-monitor","--disable-ipc-flooding-protection","--disable-notifications","--disable-prompt-on-repost","--disable-sync","--disable-site-isolation-trials","--no-first-run","--no-sandbox","--password-store=basic","--use-mock-keychain","--remote-debugging-port=0","--disable-blink-features=AutomationControlled","--disable-features=UserAgentClientHint"]}
+[discovery:debug] Browser context created with options {"javaScriptEnabled":true,"ignoreHTTPSErrors":false,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3"}
+[discovery:debug] Snapshot options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] Processed options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] Page resized to 1920x1080
+[discovery:debug] globalViewport : 1920
+[discovery:debug] Handling request https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084
+ - skipping root resource
+[discovery:debug] Navigated to https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084
+[discovery:debug] Network idle 500ms
+[discovery:debug] Processed options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] Page resized to 1366x1080
+[discovery:debug] globalViewport : 1366
+[discovery:debug] Network idle 500ms
+[discovery:debug] Processed options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] Page resized to 1028x1080
+[discovery:debug] globalViewport : 1028
+[discovery:debug] Network idle 500ms
+[discovery:debug] Processed options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] Page resized to 390x844
+[discovery:debug] globalViewport : iPhone 14 (portrait)
+[discovery:debug] Handling request https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084
+ - skipping root resource
+[discovery:debug] {"level":30,"time":1778085869907,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-4","req":{"method":"GET","url":"/healthcheck","hostname":"localhost:49152","remoteAddress":"127.0.0.1","remotePort":64278},"msg":"incoming request"}
+[discovery:debug] {"level":30,"time":1778085869909,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-4","res":{"statusCode":200},"responseTime":0.9163999557495117,"msg":"request completed"}
+[discovery:debug] {"level":30,"time":1778085869911,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-5","req":{"method":"GET","url":"/domserializer","hostname":"localhost:49152","remoteAddress":"127.0.0.1","remotePort":64278},"msg":"incoming request"}
+[discovery:debug] {"level":30,"time":1778085869912,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-5","res":{"statusCode":200},"responseTime":1.3004000186920166,"msg":"request completed"}
+[discovery:debug] {"level":30,"time":1778085870050,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-6","req":{"method":"POST","url":"/snapshot","hostname":"localhost:49152","remoteAddress":"127.0.0.1","remotePort":64278},"msg":"incoming request"}
+[discovery:debug] http request: GET /sessions/capabilities
+[discovery:debug] {"git":{"branch":"SmartUi_Test","commitId":"1698393","commitMessage":"updated log4j.xml","commitAuthor":"Reliable","githubURL":"","baselineBranch":""},"config":{"web":{"browsers":["chrome","firefox","safari","edge"],"viewports":[{"width":1920,"height":0},{"width":1366,"height":0},{"width":1028,"height":0}]},"mobile":{"devices":["iPhone 14","Galaxy S24"],"fullPage":true,"orientation":"portrait"},"waitForPageRender":0,"waitForTimeout":1000,"waitForDiscovery":30000,"enableJavaScript":false,"cliEnableJavaScript":true,"scrollTime":8,"allowedHostnames":["www.banggood.com","www.banggood.com"],"allowedAssets":[],"smartIgnore":false,"delayedUpload":false,"useGlobalCache":false,"ignoreHTTPSErrors":false,"skipBuildCreation":false,"dedicatedProxyURL":"","geolocation":"","userAgent":"","requestHeaders":{},"allowDuplicateSnapshotNames":false,"useLambdaInternal":false,"useRemoteDiscovery":false,"useExtendedViewport":false,"loadDomContent":false,"showRenderErrors":false},"isStartExec":false,"baselineBuild":"","packageVersion":"4.1.67"}
+[discovery:debug] http response: {"status":500,"headers":{"date":"Wed, 06 May 2026 16:44:30 GMT","content-type":"text/plain; charset=utf-8","content-length":"43","connection":"keep-alive","server":"cloudflare","x-content-type-options":"nosniff","cf-cache-status":"DYNAMIC","set-cookie":"__cf_bm=QiflZ_EHhkAMeISflnRDIG8DwhL6n.52KpasXicDTZs-1778085869.4804392-1.0.1.1-4Gfwrj9uDZ597DBTxOtgDGywlYDFqDl8NmwOotjwTA5uLspDCt51Qs_cpZykghmth5.Y_mwFGrPgtH23ilaIZCqAcj5n1LK8L3Hx6JEgKPFNV7x0u.EfhOWDLpzuogUX; HttpOnly; Secure; Path=/; Domain=lambdatest.com; Expires=Wed, 06 May 2026 17:14:30 GMT","cf-ray":"9f79732c3bee07a7-HKG"},"body":{"error":"Unable to get session details"}}
+[discovery:debug] Failed to fetch capabilities for sessionId cd4268930f14e7c565f6e3b318e452bc: [object Object]
+[discovery:debug] {"level":30,"time":1778085871099,"pid":25396,"hostname":"DESKTOP-SFUJ4L6","reqId":"req-6","res":{"statusCode":200},"responseTime":1048.5067999362946,"msg":"request completed"}
+[discovery:debug] Navigated to https://www.banggood.com/?p=QG132133330053201905&custlinkid=3773084
+[discovery:debug] Network idle 500ms
+[discovery:debug] Processed options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] Page resized to 360x780
+[discovery:debug] globalViewport : Galaxy S24 (portrait)
+[discovery:debug] Network idle 500ms
+[discovery:debug] Processed options: {"sessionId":"5940aedf0e3305883ee57d262878dc40"}
+[discovery:debug] snapshot failed; Error: SmartUI capabilities are missing in env variables or in driver capabilities
+[discovery:debug] Closed browser page for snapshot IndexPage - Verify Logo
+[discovery:debug] Closed browser context for snapshot IndexPage - Verify Logo
+[discovery:debug] Using local discovery
+[discovery:debug] Processing snapshot IndexPage - Verify Title https://www.automationpractice.pl/index.php
+[discovery:debug] Browser context created with options {"javaScriptEnabled":true,"ignoreHTTPSErrors":false,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3"}
+[discovery:debug] Snapshot options: {"sessionId":"cd4268930f14e7c565f6e3b318e452bc"}
+[discovery:debug] Processed options: {"sessionId":"cd4268930f14e7c565f6e3b318e452bc"}
+[discovery:debug] Page resized to 1920x1080
+[discovery:debug] globalViewport : 1920
+[discovery:debug] Handling request https://www.automationpractice.pl/index.php
+ - skipping root resource
+[discovery:debug] Resource not found in cache or global cache https://router.parklogic.com/index.php fetching from server
+[discovery:debug] Handling request https://router.parklogic.com/index.php
+ - skipping remote resource
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/click?i=DxEifdEy-GM_0 fetching from server
+[discovery:debug] Handling request https://xml-v4.pushub.net/click?i=DxEifdEy-GM_0
+ - skipping remote resource
+[discovery:debug] Navigated to https://www.automationpractice.pl/index.php
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1 fetching from server
+[discovery:debug] Network idle 500ms
+[discovery:debug] Processed options: {"sessionId":"cd4268930f14e7c565f6e3b318e452bc"}
+[discovery:debug] Handling request https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+ - skipping remote resource
+[discovery:debug] Page resized to 1366x1080
+[discovery:debug] globalViewport : 1366
+[discovery:debug] Resource not found in cache or global cache https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/css/index.38c544c7.css fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/css/main.css fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/js/index.8fc960a2.js fetching from server
+[discovery:debug] Resource not found in cache or global cache https://landerscripts.s3.amazonaws.com/page-scripts.js fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/images/eu9_logo.webp fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/images/fruit1_desktop.090f49c7.png fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/js/index.31fb8ad6.js fetching from server
+[discovery:debug] Resource not found in cache or global cache https://xml-v4.pushub.net/js/index.d09965a9.js fetching from server
+[discovery:debug] snapshot failed; Error: page.evaluate: TypeError: Cannot read properties of null (reading 'scrollHeight')
+    at eval (eval at evaluate (:302:30), <anonymous>:8:51)
+    at new Promise (<anonymous>)
+    at scrollToBottomAndBackToTop (eval at evaluate (:302:30), <anonymous>:6:10)
+    at UtilityScript.evaluate (<anonymous>:304:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[discovery:debug] Closed browser page for snapshot IndexPage - Verify Title
+[discovery:debug] Handling request https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: text/css,*/*;q=0.1
+    - accept-encoding: gzip,deflate,br
+    - referer: https://xml-v4.pushub.net/
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/css/index.38c544c7.css
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/css/index.38c544c7.css
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: text/css,*/*;q=0.1
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/css/main.css
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/css/main.css
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: text/css,*/*;q=0.1
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/js/index.8fc960a2.js
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/js/index.8fc960a2.js
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - origin: https://xml-v4.pushub.net
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://landerscripts.s3.amazonaws.com/page-scripts.js
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://landerscripts.s3.amazonaws.com/page-scripts.js
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+    - referer: https://xml-v4.pushub.net/
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/images/eu9_logo.webp
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/images/eu9_logo.webp
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/images/fruit1_desktop.090f49c7.png
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/images/fruit1_desktop.090f49c7.png
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/js/index.31fb8ad6.js
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/js/index.31fb8ad6.js
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - origin: https://xml-v4.pushub.net
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Handling request https://xml-v4.pushub.net/js/index.d09965a9.js
+ - aborted due to apiRequestContext.fetch: Target page, context or browser has been closed
+Call log:
+  - → GET https://xml-v4.pushub.net/js/index.d09965a9.js
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.107 Safari/537.3
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+    - cookie: x3332619=70550650; c-548018024=70550650; jc=1743
+    - origin: https://xml-v4.pushub.net
+    - referer: https://xml-v4.pushub.net/click2?i=DxEifdEy-GM_0&ci=-7487320195751776708&j=rv%3Db%26ss%3D1920x1080%26ws%3D1920x1080%26wp%3D0x0%26ce%3D1%26ck%3Djc%26cv%3D1743%26cs%3D1%26fr%3D0%26hc%3D0%26fl%3Dnull%26jv%3Dnull%26sc%3D24%26hr%3D2%26rf%3Dwww.automationpractice.pl%26lo%3Dxml-v4.pushub.net%26mb%3D0%26hb%3D1%26pl%3DWin32%26ua%3DMozilla%252F5.0%2B%28Windows%2BNT%2B10.0%253B%2BWin64%253B%2Bx64%29%2BAppleWebKit%252F537.36%2B%28KHTML%252C%2Blike%2BGecko%29%2BChrome%252F123.0.6312.107%2BSafari%252F537.3%26nd%3D0%26to%3Dnull%26wbd%3D1%26wbde%3D0%26sqm%3D0%26phj%3D0%26nmj%3D0%26sln%3D0%26es%3D0%26ln%3Den-US%26lnl%3D1%26hsc%3D0%26frc%3D0%26dbt%3D0%26prb%3D20030107%26tz%3D-420%26hid%3D0%26mq%3D1%26my%3D16%26geo%3D1%26thx%3D0%26the%3D0%26ths%3D0%26cpc%3D%26ocp%3D%26hwc%3D16%26hrl%3D%26acd%3Dpppmp%26vcd%3Dnpp%26pal%3D0%26pai%3D1%26pli%3D%26win%3D1920x1080%26wout%3D1920x1080%26wpof%3D0x0%26bcld%3D1904x18%26scrp%3D0x0%26scrad%3D1920x1080%26spd%3D24%26pxr%3D1%26sck%3D1%26ckl%3D48%26sls%3D1%26sss%3D1%26six%3D1%26sdb%3D0%26vvr%3DGoogle%2BInc.%2B%28Google%29%26vrd%3DANGLE%2B%28Google%252C%2BVulkan%2B1.3.0%2B%28SwiftShader%2BDevice%2B%28Subzero%29%2B%280x0000C0DE%29%29%252C%2BSwiftShader%2Bdriver%29%26cnvs%3D80808080%26pnt%3Dprompt%26bch%3D0%26blv%3D0.46%26mmd_ao%3D1%26mmd_ai%3D1%26mmd_vi%3D1
+    - sec-ch-ua: "Chromium";v="129", "Not=A?Brand";v="8"
+    - sec-ch-ua-mobile: "?0"
+    - sec-ch-ua-platform: "Windows"
+[discovery:debug] Closed browser context for snapshot IndexPage - Verify Title
+[finalizeBuild:debug] Closed browser
+[finalizeBuild:debug] Closed server
+[finalizeBuild:debug] Log file to be uploaded
+[finalizeBuild:debug] http request: POST /loguploadurl
+[finalizeBuild:debug] {"buildId":""}
+[finalizeBuild:debug] http response: {"status":400,"headers":{"date":"Wed, 06 May 2026 16:44:49 GMT","content-type":"application/json","content-length":"57","connection":"keep-alive","server":"cloudflare","cf-cache-status":"DYNAMIC","set-cookie":"__cf_bm=lo0S.CcHS5S5zPohYxS3oPoJyrTtk.d3X5ffop9juTQ-1778085888.2264097-1.0.1.1-S3FP.kNrLlMEFibsMU_R89R41PxJPIj6h97lLKf10x.nEHTi12Wq8EQV_gWjmF5hqGZHriJPz5ool3WGSh4H57NZFLNj5uweP..ELsmfVx6uFKdpr6VvKu7ot6dbFh8n; HttpOnly; Secure; Path=/; Domain=lambdatest.com; Expires=Wed, 06 May 2026 17:14:49 GMT","cf-ray":"9f7973a16b8a08b8-HKG"},"body":{"error":{"code":400,"message":"Project Token missing"}}}
+[finalizeBuild:debug] Project Token missing

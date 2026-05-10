@@ -16,6 +16,8 @@ import com.mystore.pageobjects.IndexPage;
 import com.mystore.pageobjects.SearchResultPage;
 import com.mystore.utility.Log;
 
+import io.github.lambdatest.SmartUISnapshot;
+
 /**
  * @author Hitendra
  *
@@ -47,6 +49,7 @@ public class AddToCartPageTest extends BaseClass {
 		addToCartPage.selectSize(size);
 		addToCartPage.clickOnAddToCart();
 		boolean result=addToCartPage.validateAddtoCart();
+		SmartUISnapshot.smartuiSnapshot(getDriver(), "AddToCart - Cart Layer");
 		Assert.assertTrue(result);
 		Log.endTestCase("addToCartTest");
 		
